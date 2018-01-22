@@ -1,0 +1,56 @@
+
+
+.social-links
+	display: flex
+	font-size: 3rem
+	justify-content: space-around 	//makes space between the links
+	opacity: .7
+	margin: .7em 0
+	
+
+
+
+footer
+	background: $dark
+	
+	padding: 5em 0
+
+	position: relative
+
+
+	&::before		//don't quite understand this function or what it is doing
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		background: url(../images/xwing.jpg)
+		background-size: contain		//now i can always see the pic within the frame
+		background-repeat: no-repeat	//no repeating the image
+		background-position: center
+		opacity: .2		//for the background image
+
+	
+	a
+		color: lightblue
+
+
+
+
+
+.nav-footer
+	display: flex		//puts everything in a line from left to right
+	justify-content: space-around
+	
+	margin: 0 auto
+
+	a
+		text-decoration: none
+		font-weight: $font-bold
+		color: green
+
+
+.container--footer
+	max-width: 25em

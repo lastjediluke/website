@@ -1,0 +1,24 @@
+.sales-points
+	padding: 10vh 0	0	//vh adjusts itself according the type of screen they are using
+
+
+	.sales-point
+		margin-bottom: 2em
+
+		&:first-of-type
+			margin-top: 1.5em
+
+
+		&:last-child
+			margin-bottom: 0
+
+
+		@media(min-width: 725px)
+			&:first-of-type
+				margin-top: 0
+
+
+	.sales-point img	//allows me to edit image withing sales-point class
+		width: 30%
+		height: auto
+

@@ -1,0 +1,139 @@
+.main-nav
+	background: $accent
+	position: absolute
+	top: 0
+	right: 0
+	left: 100%
+	font-size: 1.2rem
+	overflow: hidden
+	transition: all ease-in-out 250ms	
+	//transition for hamburger
+	@media(min-width:725px)
+		position: relative
+		flex: auto
+		background: none
+		margin-top: 1em
+		margin-left: 2em
+		left: 0
+
+	
+		
+
+
+	ul
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		text-align: center
+		height: 100vh
+
+		@media(min-width: 725px)
+			flex-direction: row
+			height: auto
+
+		
+
+	li
+		
+		flex: 1 1 auto
+		border-bottom: 1px solid rgba(0, 0, 0, .25)
+		display: flex
+
+		
+		
+		
+		//i am taking out align-items and justify content to do some flexbox stuff down below in the a section
+
+		@media(min-width:725px)
+			display: inline-block
+			border: none
+			text-align: right
+
+
+		
+		
+
+
+
+
+	a  			//this is the link tag
+		color: white		
+		text-decoration: none
+		
+		flex-basis: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		
+		@media(min-width:725px)
+			display: inline
+
+
+		&:hover
+			background: rgba(0, 0, 0, .1)
+			//this darkens background no matter what my color is for this particular menu
+			@media(min-width:725px)
+				background: none
+				color: darken(white, 15%)
+			
+			
+				
+
+
+
+
+	&.is-open
+		left: 0
+
+
+	
+
+
+//hamburger menu
+
+.nav-toggle
+	display: block
+	
+	padding: 1em
+	position: absolute
+	right: 1em
+	top: 1em
+	cursor: pointer //changes mouse shape
+	@media(min-width:725px)
+		display: none
+	
+
+
+
+
+
+.hamburger, .hamburger::before, .hamburger::after
+	content: ''		//don't know what this does
+	display: block
+	width: 2em
+	height: 3px
+	background: white
+	transition: all ease-in-out 250ms	//could just do transition as well
+
+
+.hamburger::before
+	transform: translateY(-6px)
+
+
+.hamburger::after
+	transform: translateY(3px)
+
+
+.hamburger.is-open
+	transform: rotate(45deg)
+	
+
+	&::after		//the & refers back to .hamburger class
+
+		transform: rotate(-90deg) translateX(3px)
+
+	&::before
+		opacity: 0
+
+
+

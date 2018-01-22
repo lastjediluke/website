@@ -2,6 +2,8 @@
 
 // 1. config files and helpers
 
+//I only include sass stuff
+
 @import abstracts/colors
 @import abstracts/type
 
@@ -11,19 +13,27 @@
 @import vendor/normalize
 
 
+
+@import layout/grid
 // 3. base styles
 
 @import base/base
+@import base/typo
 
 
 // 4. layout
-@import layout/grid
+
 @import layout/header
 @import layout/hero
+@import layout/nav
+@import layout/home-promo
+@import layout/home-sales-points
+@import layout/footer
 
 
 
 
 // 5. components
 
-
+@import components/buttons
+@import components/cta

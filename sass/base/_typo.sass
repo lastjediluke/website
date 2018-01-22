@@ -1,0 +1,97 @@
+
+//typography
+
+
+h1, h2, h3, h4, h5, h6, p
+	margin: 0 0 .75em
+
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child
+	margin: 0
+
+
+
+
+h1
+	font-size: 2rem
+	text-transform: uppercase
+	font-weight: $font-light
+	line-height: 1.15
+	letter-spacing: 3px
+
+
+
+
+h2
+	font-size: 1.2rem
+	text-transform: uppercase
+	letter-spacing: 2px
+	line-height: 1
+
+
+
+
+.title-large
+	font-size: 3rem
+	font-weight: $font-black
+	line-height: 1
+	span
+		font-weight: $font-light
+	
+
+
+.title-box
+	background: $accent
+	color: white
+	margin: 0 auto
+	padding: 2em
+	transform: translateY(20%) //moves title box down to cross wth the other section
+	max-width: 80%
+	@media(min-width: 495px)
+		transform: translateY(50%)
+
+	& + .bg-primary
+		padding-top: 8em
+		@media(min-width: 495px)
+			padding-top: 8em
+
+
+	@media(min-width: 725px)
+		max-width: 700px
+
+
+		//any time there is a  title box and a bg primary, then there should be a padding on top
+
+
+
+
+
+.text-intro
+	font-size: 1.2rem
+
+
+.title-footer
+	text-transform: uppercase
+	color: white
+	letter-spacing: 3px
+	line-height: 1
+
+	&::before		//pseudo elements
+		content: ''
+		display: block
+		height: 1px
+		background: white
+		opacity: .25
+		margin: .75em 0
+
+	&::after
+		content: ''
+		display: block
+		height: 1px
+		background: white
+		opacity: .25
+		margin: .75em 0
+
+
+
+
+ 
