@@ -16,21 +16,23 @@
 
 <body>
 
-	<header class = "main-header">
+	<header id = "top" class = "main-header">
 
 		<div class = "container grid">
 
-			<div class = "logo"><img src ="images/xwing.jpg" alt = "I am Luke"></div>
+
+
+			<div class = "logo"><img src ="images/profpic.jpg" alt = "profpic"></div>
 
 			<nav class = "main-nav">
 				
 				<ul class = "unstyled-list">
 
-					<li><a href = "">Home</a></li>
-					<li><a href = "">About</a></li>
-					<li><a href = ""></a></li>
-					<li><a href = ""></a></li>
-					<li><a href = "">Contact</a></li>
+					<li><a href = "#top">Top</a></li>
+					<li><a href = "#about">About Me</a></li>
+					<li><a href = "#skills">Skills</a></li>
+					<li><a href = "#projects">Projects</a></li>
+					<li><a href = "#bottom">Contact</a></li>
 
 				</ul>
 
@@ -40,6 +42,8 @@
 			<div class = "nav-toggle">
 				<div class = "hamburger"></div>
 			</div>	
+
+			
 
 
 
@@ -56,13 +60,13 @@
 	<section class ="hero">
 		<div class = "container grid">
 			<div class="hero-text col col--2-3">		<!-- usually the stuff in quotes is just the name of something -->
-				<h1 class = "title-large"><span>Hello </span>There</h1>	<!-- the span is for the separation to bold things up -->
-				<p class = "text-intro">Welcome to my very first website that was built from scratch! Hopefully, you'll get to know me a little bit more by browsing this site.  Please keep in mind that this site is a work in progress...</p>
-				<a href = "" class = "btn btn--secondary">Skills</a>		<!-- doible hyphen is a modifier -->
-				<div></div>
+				<h1 class = "title-large">Hello <span>There</span></h1>	<!-- the span is for the separation to bold things up -->
+				<p class = "text-intro">I'm Luke! Welcome to my very first website that was built from scratch. Hopefully, you'll get to know me a little bit more by browsing this site.  Please keep in mind that this site is a work in progress...</p>
+				<a href = "#bottom" class = "btn btn--secondary">Contact me</a>		<!-- doible hyphen is a modifier -->
+				<!-- <div></div>
 				<a href = "" class = "btn btn--primary">Projects</a>
 				<div></div>
-				<a href = "" class = "btn">about me</a>
+				<a href = "" class = "btn">about me</a> -->
 
 			</div>
 
@@ -82,51 +86,24 @@
  -->
 
 
- <section class = "sales-points">
- 	<div class = "container grid">
- 		<h1 class = "col col--full">Skills</h1>
-
- 		<div class = "sales-point col col--1-3">
- 			<img src="images/xwing3.png" alt="">
- 			<h2>Education</h2>
- 			<p>jkdfkj fjdjs   jfkdjsj fkjds  jjfkds jfkdj j kfdj s</p>
- 		</div>	
- 		<div class = "sales-point col col--1-3">
- 			<img src="images/xwing3.png" alt="">
- 			<h2>Skills</h2>
- 			<p>jkdfkj fjdjs   jfkdjsj fkjds  jjfkds jfkdj j kfdj s</p>
- 		</div>	
- 		<div class = "sales-point col col--1-3">
- 			<img src="images/xwing3.png" alt="">
- 			<h2>Projects</h2>
- 			<p>jkdfkj fjdjs   jfkdjsj fkjds  jjfkds jfkdj j kfdj s</p>
- 		</div>	
-
-
- 	</div>
- </section>	
+ 
 
 
 
  <section class = "promo">
  	
- 		<div class = "title-box">
- 			<h1>Salad</h1>
- 			<p>papapifidfbdfbjdjdjdjj jfdhf hd  fdhb fhbdhff dbh jdjh ffhhfjhd hjdhfdh jhfhdjh jhddfhj dhjdh hddjkfh dhfhdjhfjdhfh dkh</p>
+ 		<div id = "about" class = "title-box">
+ 			<h1>About Me</h1>
+ 			
  		</div>
  	<div class = "grid">
  		<div class = "col bg-primary">
- 			<h1>Dressing</h1>
- 			<h2>shee shee</h2>
- 			<p>hah ha lahal hal hal hah al hf hdhfjsjksj jjd jddhjddjsah  jdjdhdh hjd h dhdhjdjhd hd hj  hdjdd j hhd hdhdj hj dhjd hjdhdshjdhhsdhsj h shd jhsdjhsdjssj j j   j jsjjsjsjjsjs jjh jh jhjh
+ 			<!-- <h1>Dressing</h1>
+ 			<h2>shee shee</h2> -->
+ 			<p>I grew up in Watsonville, CA.  I am a junior studying Computer Engineering at San Jose State University.  I have an interest in both the hardware and software side of computers.  We have access to the internet almost everywhere around the globe.  I want to develop software or design new hardware that makes communicating a faster, smoother, and an overall better experience.</p>
 
- 			jfjdksfk hjkhfjdsh jk
-
-
- 		 djhsk hfjdhsj 
-
- 		 fdhsjf hdsjkf jf dfdh fjdhfjhj hfhdh jdhjfhj dhfjdhf jdhfjdhjshjfhdjshfjdhsjhfdhfj hdshfjdshfjdsjhfdjshfj hdshf jdh fjdhjf hdj fhjdhfj kshfj hdjfh jdshfj hdsjkfh djsh fjhdsjf hdsjfh jdshfj dhjfhdjs hjdhf jdhfj dhjf hjdsh</p>
- 			<a href ="" class = "btn btn--primary"></a>
+ 			<p>Besides my interests in computers, I also enjoy playing and watching sports.  My favorite teams are all Bay Area teams: 49ers, Warriors, Sharks, and Giants.  I also thoroughly enjoy the Star Wars franchise!</p>
+ 			<!-- <a href ="" class = "btn btn--primary"></a> -->
 
 
  		</div>	
@@ -139,12 +116,49 @@
  	
 </section> 	
 
+<section class = "sales-points">
+ 	<div id = "projects" class = "container grid">
+ 		<h1 class = "col proj col--full">Projects</h1>
+
+ 		<div class = "sales-point col col--1-3">
+ 			<img src="images/security.png" alt="">
+ 			<h2>iSecure</h2>
+ 			<p>Designed and programmed an in-home security system with a password, temperature display, and alarm reset.</p>
+ 		</div>	
+ 		<div class = "sales-point col col--1-3">
+ 			<img src="images/retropie.png" alt="">
+ 			<h2>Retropie</h2>
+ 			<p>As I've grown older, I've recognized that I have become more and more nostalgic for things of the past.  Using a Raspberry Pi 3, I plan to build a retro gaming machine!</p>
+ 		</div>	
+ 		<div class = "sales-point col col--1-3">
+ 			<img src="images/controller.png" alt="">
+ 			<h2>Browser Games</h2>
+ 			<p>In order to familiarize myself with JavaScript and HTML, I decided to attempt to make a few browser-based games.</p>
+ 		</div>	
+
+ 		<p>More to come...</p>
+ 		<!-- I can totally add more projects to this section -->
+
+
+ 	</div>
+ </section>	
+
 
 
 
 <section class = "cta">
-	<p class="text-large"> Thank you for actually scrolling this far...</p>
-	<h1 class = "title-large"> Projects are so fricken lame my man </h1>
+	
+	<h1 id = "skills" class = "title-large">Skills</h1>
+	<!-- <p class="text-large"> Thank you for actually scrolling this far...</p> -->
+	<ul>
+		<li>C/C++</li>
+		<li>Website Design</li>
+		<li>Digital Circuit Design</li>
+		<li class = "last-skill">Embedded Systems</li>
+
+
+
+	</ul>
 
 
 </section>	
@@ -156,21 +170,24 @@
 
 <footer>
 	<div class = "container container--footer">
-		<p class = "title-footer">Contact Me</p>
+		<p id = "bottom" class = "title-footer">Contact Me</p>
 		<ul class = "unstyled-list social-links">
-			<li><a href = ""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-			<li><a href = ""></a></li>
-			<li><a href = ""></a></li>
-			<li><a href = ""></a></li>
+			<li><a href = "https://twitter.com/last_jedi_luke?lang=en"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+			<li><a href = "https://www.linkedin.com/in/luke-dillon-958a4413a/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+			<li><a href = "https://www.facebook.com/DOM3ag396"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+			
 		</ul>
-	
+
+		
+			<p class = "email">luke.k.dillon@gmail.com</p>
+		
 
 		<ul class = "unstyled-list nav-footer">		
-			<li><a href = "">Home</a></li>
-			<li><a href = "">About</a></li>
-			<li><a href = ""></a></li>
-			<li><a href = ""></a></li>
-			<li><a href = "">Contact</a></li>
+			<li><a href="#top">Top</a></li>
+			<li><a href = "#about">About Me</a></li>
+			<li><a href = "#skills">Skills</a></li>
+			<li><a href = "#projects">Projects</a></li>
+			<li><a href = "#bottom">Contact</a></li>
 		</ul>
 	</div>
 

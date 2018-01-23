@@ -439,11 +439,9 @@ template {
 }
 
 .grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: flex-basis;
+  -ms-flex-wrap: flex-wrap;
+  flex-wrap: flex-wrap;
 }
 
 .col {
@@ -489,7 +487,7 @@ template {
 }
 
 body {
-  color: red;
+  color: black;
   text-align: center;
 }
 
@@ -510,6 +508,12 @@ img {
   list-style: none;
 }
 
+.email {
+  color: white;
+  opacity: .7;
+  text-decoration: underline;
+}
+
 .lg-screen {
   display: none;
 }
@@ -521,8 +525,8 @@ img {
 }
 
 .bg-primary {
-  background: #048ca8;
-  color: white;
+  background: none;
+  color: black;
   padding: 5em 2.5em;
 }
 
@@ -539,12 +543,11 @@ h1 {
   text-transform: uppercase;
   font-weight: 300;
   line-height: 1.15;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 }
 
 h2 {
   font-size: 1.2rem;
-  text-transform: uppercase;
   letter-spacing: 2px;
   line-height: 1;
 }
@@ -560,8 +563,9 @@ h2 {
 }
 
 .title-box {
-  background: #d31869;
-  color: white;
+  background: none;
+  color: black;
+  border: 2px solid black;
   margin: 0 auto;
   padding: 2em;
   -webkit-transform: translateY(20%);
@@ -628,14 +632,30 @@ h2 {
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 1em;
+  padding-top: 5em;
 }
 
 .logo {
   width: 30%;
   min-width: 10rem;
   max-width: 15rem;
-  background: light blue;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 725px) {
+  .logo {
+    margin-right: 100%;
+    padding-top: 2em;
+  }
+}
+
+.logo img {
+  border: 2px solid white;
 }
 
 .hero {
@@ -643,7 +663,7 @@ h2 {
   background: -webkit-linear-gradient(left, #048ca8, #d31869);
   background: -o-linear-gradient(left, #048ca8, #d31869);
   background: linear-gradient(to right, #048ca8, #d31869);
-  padding-top: 15em;
+  padding-top: 17em;
   padding-bottom: 5em;
   text-align: center;
   color: white;
@@ -655,6 +675,7 @@ h2 {
     padding-bottom: 0;
     height: 80vmin;
     min-height: 800px;
+    padding-top: 15em;
   }
 }
 
@@ -665,7 +686,7 @@ h2 {
 }
 
 .main-nav {
-  background: #d31869;
+  background: #048ca8;
   position: absolute;
   top: 0;
   right: 0;
@@ -679,14 +700,15 @@ h2 {
 
 @media (min-width: 725px) {
   .main-nav {
-    position: relative;
     -webkit-box-flex: 1;
     -ms-flex: auto;
     flex: auto;
     background: none;
-    margin-top: 1em;
-    margin-left: 2em;
     left: 0;
+    padding-left: 10em;
+    padding-top: 3.5em;
+    padding-right: 2em;
+    text-decoration: underline;
   }
 }
 
@@ -825,18 +847,37 @@ h2 {
 
 .promo .bg-primary {
   text-align: left;
-  padding-left: 5%;
-  padding-top: 8em;
+  padding-left: 10%;
+  padding-top: 6em;
   padding-bottom: 7.5em;
   padding-right: 5%;
 }
 
+.promo .last-skill {
+  padding-bottom: 4em;
+}
+
 .sales-points {
   padding: 10vh 0	0;
+  background: #048ca8;
+  padding-bottom: 3rem;
+}
+
+.sales-points h1 {
+  color: white;
+  padding-bottom: 1em;
 }
 
 .sales-points .sales-point {
   margin-bottom: 2em;
+}
+
+.sales-points .sales-point h2 {
+  color: white;
+}
+
+.sales-points .sales-point p {
+  color: #d31869;
 }
 
 .sales-points .sales-point:first-of-type {
@@ -844,7 +885,7 @@ h2 {
 }
 
 .sales-points .sales-point:last-child {
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 725px) {
@@ -858,6 +899,10 @@ h2 {
   height: auto;
 }
 
+.sales-points .proj {
+  text-decoration: underline;
+}
+
 .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -866,12 +911,11 @@ h2 {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   opacity: .7;
-  margin: .7em 0;
 }
 
 footer {
   background: #444;
-  padding: 5em 0;
+  padding: 3em 0;
   position: relative;
 }
 
@@ -879,34 +923,19 @@ footer::before {
   content: '';
   display: block;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: url(../images/xwing.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: .2;
 }
 
 footer a {
-  color: lightblue;
+  color: white;
 }
 
 .nav-footer {
+  padding-top: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin: 0 auto;
-}
-
-.nav-footer a {
-  text-decoration: none;
-  font-weight: 700;
-  color: green;
 }
 
 .container--footer {
@@ -946,11 +975,11 @@ footer a {
 }
 
 .cta {
-  background-image: url(../images/xwing3.png);
-  background-size: cover;
-  background-position: center;
-  padding: 5em 0;
-  background-blend-mode: multiply;
-  color: white;
-  position: relative;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  color: black;
+}
+
+.cta li {
+  text-align: left;
 }

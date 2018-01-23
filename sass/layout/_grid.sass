@@ -1,6 +1,6 @@
 .grid
-	display: flex
-	flex-wrap: wrap
+	display: flex-basis		//I need to look this up
+	flex-wrap: flex-wrap 	//I believe container and grid create uniformity for the layout of the site
 
 
 
@@ -8,6 +8,7 @@
 	flex: 0 0 100% 
 	//1st: flex-shrink, 2nd: flex-grow, 3rd: flex-basis
 	padding: 0 .75em
+
 	@media (min-width: 725px)
 		&:first-of-type
 			padding-left: 0
@@ -15,6 +16,7 @@
 
 		&:last-of-type
 			padding-right: 0
+
 
 .col--full
 	flex: 0 0 100%
