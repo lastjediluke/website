@@ -645,12 +645,6 @@ h2 {
   margin-right: auto;
 }
 
-.logo img {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
 @media (min-width: 725px) {
   .logo {
     margin-right: 100%;
