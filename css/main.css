@@ -639,9 +639,6 @@ h2 {
   width: 30%;
   min-width: 10rem;
   max-width: 15rem;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
   display: block;
   margin-left: auto;
   margin-right: auto;
