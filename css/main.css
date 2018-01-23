@@ -645,6 +645,12 @@ h2 {
   margin-right: auto;
 }
 
+.logo img {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 @media (min-width: 725px) {
   .logo {
     margin-right: 100%;
@@ -703,8 +709,8 @@ h2 {
     flex: auto;
     background: none;
     left: 0;
-    padding-left: 10em;
-    padding-top: 3.5em;
+    padding-left: 11em;
+    padding-top: 4em;
     padding-right: 2em;
     text-decoration: underline;
   }
