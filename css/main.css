@@ -639,6 +639,7 @@ h2 {
   width: 30%;
   min-width: 10rem;
   max-width: 15rem;
+  padding-top: 3em;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -660,7 +661,7 @@ h2 {
   background: -webkit-linear-gradient(left, #048ca8, #d31869);
   background: -o-linear-gradient(left, #048ca8, #d31869);
   background: linear-gradient(to right, #048ca8, #d31869);
-  padding-top: 17em;
+  padding-top: 18em;
   padding-bottom: 5em;
   text-align: center;
   color: white;
