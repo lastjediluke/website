@@ -661,7 +661,7 @@ h2 {
   background: -webkit-linear-gradient(left, #048ca8, #d31869);
   background: -o-linear-gradient(left, #048ca8, #d31869);
   background: linear-gradient(to right, #048ca8, #d31869);
-  padding-top: 18em;
+  padding-top: 25em;
   padding-bottom: 5em;
   text-align: center;
   color: white;
@@ -673,7 +673,7 @@ h2 {
     padding-bottom: 0;
     height: 80vmin;
     min-height: 800px;
-    padding-top: 15em;
+    padding-top: 23em;
   }
 }
 
@@ -703,8 +703,8 @@ h2 {
     flex: auto;
     background: none;
     left: 0;
-    padding-left: 11em;
-    padding-top: 4em;
+    padding-left: 12em;
+    padding-top: 5.5em;
     padding-right: 2em;
     text-decoration: underline;
   }
