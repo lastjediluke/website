@@ -645,13 +645,6 @@ h2 {
   margin-right: auto;
 }
 
-@media (min-width: 725px) {
-  .logo {
-    margin-right: 100%;
-    padding-top: 2em;
-  }
-}
-
 .logo img {
   border: 2px solid white;
 }
@@ -665,16 +658,6 @@ h2 {
   padding-bottom: 5em;
   text-align: center;
   color: white;
-}
-
-@media (min-width: 725px) {
-  .hero {
-    text-align: left;
-    padding-bottom: 0;
-    height: 80vmin;
-    min-height: 800px;
-    padding-top: 23em;
-  }
 }
 
 @media (min-width: 725px) {
@@ -702,10 +685,10 @@ h2 {
     -ms-flex: auto;
     flex: auto;
     background: none;
+    margin-right: auto;
+    margin-left: auto;
     left: 0;
-    padding-left: 12em;
-    padding-top: 5.5em;
-    padding-right: 2em;
+    padding-top: 2.5em;
     text-decoration: underline;
   }
 }
@@ -748,7 +731,6 @@ h2 {
   .main-nav li {
     display: inline-block;
     border: none;
-    text-align: right;
   }
 }
 
@@ -872,10 +854,12 @@ h2 {
 
 .sales-points .sales-point h2 {
   color: white;
+  padding-top: 1em;
 }
 
 .sales-points .sales-point p {
   color: #d31869;
+  padding-bottom: 2em;
 }
 
 .sales-points .sales-point:first-of-type {
