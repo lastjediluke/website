@@ -681,6 +681,7 @@ h2 {
 
 @media (min-width: 725px) {
   .main-nav {
+    position: absolute;
     -webkit-box-flex: 1;
     -ms-flex: auto;
     flex: auto;
