@@ -1,0 +1,13 @@
+.Square {
+				width: 40px;
+				height: 40px;
+				text-align: center;
+				font-size: 18px;
+				font-weight: bold;
+				font-family: Verdana;
+				color: blue;
+			}
+
+.Header {
+					text-align: center;
+				}
