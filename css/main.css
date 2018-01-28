@@ -893,7 +893,7 @@ h2 {
 
 .sales-points2 {
   padding: 10vh 0	0;
-  background: #d31869;
+  background: purple;
   padding-bottom: 3rem;
 }
 
@@ -920,7 +920,7 @@ h2 {
 }
 
 .sales-points2 .sales-point2 p {
-  color: #048ca8;
+  color: lightblue;
   padding-bottom: 2em;
 }
 
