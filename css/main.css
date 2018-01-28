@@ -910,40 +910,40 @@ h2 {
   color: white;
 }
 
-.sales-points2 .sales-point {
+.sales-points2 .sales-point2 {
   margin-bottom: 2em;
 }
 
-.sales-points2 .sales-point h2 {
+.sales-points2 .sales-point2 h2 {
   color: white;
   padding-top: 1em;
 }
 
-.sales-points2 .sales-point p {
+.sales-points2 .sales-point2 p {
   color: #048ca8;
   padding-bottom: 2em;
 }
 
-.sales-points2 .sales-point:first-of-type {
+.sales-points2 .sales-point2:first-of-type {
   margin-top: 1.5em;
 }
 
-.sales-points2 .sales-point:last-child {
+.sales-points2 .sales-point2:last-child {
   margin-bottom: 2rem;
 }
 
 @media (min-width: 725px) {
-  .sales-points2 .sales-point:first-of-type {
+  .sales-points2 .sales-point2:first-of-type {
     margin-top: 0;
   }
 }
 
-.sales-points2 .sales-point img {
+.sales-points2 .sales-point2 img {
   width: 30%;
   height: auto;
 }
 
-.sales-points2 .proj {
+.sales-points2 .proj2 {
   text-decoration: underline;
 }
 
