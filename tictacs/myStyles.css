@@ -1,13 +1,25 @@
-.Square {
-				width: 40px;
-				height: 40px;
-				text-align: center;
-				font-size: 18px;
-				font-weight: bold;
-				font-family: Verdana;
-				color: blue;
-			}
+.Square 
+{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Verdana;
+	color: blue;
+			
+}
 
-.Header {
-					text-align: center;
-				}
+.Header 
+{
+	text-align: center;
+}
+
+
+
+#so
+{
+	text-align: center;
+	margin-top: 1em;
+}
+
